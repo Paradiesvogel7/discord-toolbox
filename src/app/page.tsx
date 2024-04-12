@@ -3,7 +3,7 @@ import React from "react";
 import { NextPage } from "next";
 import { NavBar } from "@/components/NavBar";
 import { HeroHighlight } from "@/components/HeroHighlight";
-import { Button } from "@nextui-org/react";
+import { Button, Link } from "@nextui-org/react";
 import { Footer } from "@/components/Footer";
 
 const Home: NextPage = () => {
@@ -18,22 +18,26 @@ const Home: NextPage = () => {
           A collection of tools for Discord users and developers.
         </p>
         <div className="flex justify-center mt-8 gap-4">
-          <Button
-            size="lg"
-            variant="solid"
-            color="primary"
-            className="font-bold"
-          >
-            Get Started
-          </Button>
-          <Button
-            size="lg"
-            variant="solid"
-            color="secondary"
-            className="font-bold"
-          >
-            About
-          </Button>
+          <Link href="/tools">
+            <Button
+              size="lg"
+              variant="solid"
+              color="primary"
+              className="font-bold"
+            >
+              Get Started
+            </Button>
+          </Link>
+          <Link href="/about">
+            <Button
+              size="lg"
+              variant="solid"
+              color="secondary"
+              className="font-bold"
+            >
+              About
+            </Button>
+          </Link>
         </div>
         <p className="text-xs text-white text-center mt-8">
           © {new Date().getFullYear()}. All rights reserved
