@@ -1,9 +1,9 @@
-import React from "react";
-import { NextPage } from "next";
-import { IconProps } from "./index";
+import React from 'react';
+import { NextPage } from 'next';
+import { IconProps } from './index';
 
 export const Logo: NextPage<IconProps> = ({
-  fill = "#5865f3",
+  fill = '#5865f3',
   size,
   height = size,
   width = size,

@@ -1,10 +1,10 @@
-"use client";
-import React from "react";
-import { NextPage } from "next";
-import { NavBar } from "@/components/NavBar";
-import { HeroHighlight } from "@/components/HeroHighlight";
-import { Button, Link } from "@nextui-org/react";
-import { Footer } from "@/components/Footer";
+'use client';
+import React from 'react';
+import { NextPage } from 'next';
+import { NavBar } from '@/components/NavBar';
+import { HeroHighlight } from '@/components/HeroHighlight';
+import { Button, Link } from '@nextui-org/react';
+import { Footer } from '@/components/Footer';
 
 const Home: NextPage = () => {
   return (
@@ -19,22 +19,12 @@ const Home: NextPage = () => {
         </p>
         <div className="flex justify-center mt-8 gap-4">
           <Link href="/tools">
-            <Button
-              size="lg"
-              variant="solid"
-              color="primary"
-              className="font-bold"
-            >
+            <Button size="lg" variant="solid" color="primary" className="font-bold">
               Get Started
             </Button>
           </Link>
           <Link href="/about">
-            <Button
-              size="lg"
-              variant="solid"
-              color="secondary"
-              className="font-bold"
-            >
+            <Button size="lg" variant="solid" color="secondary" className="font-bold">
               About
             </Button>
           </Link>
