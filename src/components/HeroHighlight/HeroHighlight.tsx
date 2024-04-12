@@ -1,7 +1,7 @@
-"use client";
-import { cn } from "@/utils/cn";
-import { useMotionValue, motion, useMotionTemplate } from "framer-motion";
-import React from "react";
+'use client';
+import { cn } from '@/utils/cn';
+import { useMotionValue, motion, useMotionTemplate } from 'framer-motion';
+import React from 'react';
 
 export const HeroHighlight = ({
   children,
@@ -15,11 +15,7 @@ export const HeroHighlight = ({
   let mouseX = useMotionValue(0);
   let mouseY = useMotionValue(0);
 
-  function handleMouseMove({
-    currentTarget,
-    clientX,
-    clientY,
-  }: React.MouseEvent<HTMLDivElement>) {
+  function handleMouseMove({ currentTarget, clientX, clientY }: React.MouseEvent<HTMLDivElement>) {
     if (!currentTarget) return;
     let { left, top } = currentTarget.getBoundingClientRect();
 
@@ -28,10 +24,7 @@ export const HeroHighlight = ({
   }
   return (
     <div
-      className={cn(
-        "relative h-[100vh] flex justify-center group",
-        containerClassName
-      )}
+      className={cn('relative h-[100vh] flex justify-center group', containerClassName)}
       onMouseMove={handleMouseMove}
     >
       <div className="absolute inset-0 bg-[#0c1623] pointer-events-none" />
@@ -55,9 +48,7 @@ export const HeroHighlight = ({
         }}
       />
 
-      <div className={cn("relative z-20 translate-y-[25%]", className)}>
-        {children}
-      </div>
+      <div className={cn('relative z-20 translate-y-[25%]', className)}>{children}</div>
     </div>
   );
 };
