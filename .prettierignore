@@ -2,3 +2,9 @@ node_modules/
 package.json
 package-lock.json
 .next/
+README.md
+CONTRIBUTING.md
+LICENSE
+.github/
+.vscode/
+*.md
