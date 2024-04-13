@@ -15,7 +15,7 @@ const Home: NextPage = () => {
           Discord Toolbox
         </h1>
         <p className="text-lg px-4 md:text-2xl lg:text-4xl font-semibold text-white max-w-4xl text-center mx-auto">
-          A collection of tools for Discord users and developers.
+          A collection of tools for Discord users and developers to make their life easier.
         </p>
         <div className="flex justify-center mt-8 gap-4">
           <Link href="/tools">
