@@ -1,9 +1,5 @@
-import React from 'react';
+import React, { type SVGProps } from 'react';
 
-export interface IconProps {
-  fill?: string;
+export type IconProps = SVGProps<SVGSVGElement> & {
   size?: number;
-  height?: number;
-  width?: number;
-  style?: React.CSSProperties;
-}
+};

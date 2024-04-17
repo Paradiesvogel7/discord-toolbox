@@ -5,3 +5,18 @@
 .home {
   overflow: hidden;
 }
+
+body::-webkit-scrollbar-track {
+  border-radius: 8px;
+  background-color: #0f1621;
+}
+
+body::-webkit-scrollbar {
+  width: 8px;
+  background-color: #0f1621;
+}
+
+body::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #50545c;
+}
